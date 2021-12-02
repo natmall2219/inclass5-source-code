@@ -3,18 +3,18 @@
 //11/4/21
 // ADD NEW ITEM TO END OF LIST
 var list = document.getElementsByTagName('ul')[0];
-var creamElement = document.createElement('li');
+var lastItem = document.createElement('li');
 var creamNodeText = document.createTextNode('cream');
-creamElement.appendChild(creamNodeText);
-list.appendChild(creamElement);
+lastItem.appendChild(creamNodeText);
+list.appendChild(lastItem);
 //creates the sixth element in the list and adds it to the end of the list as a text node. 
 
 // ADD NEW ITEM START OF LIST
 var list = document.getElementsByTagName('ul')[0];
-var kaleElementFirst = document.createElement('li');
-var kaleNodeText = document.createTextNode('kale');
-kaleElementFirst.appendChild(kaleNodeText);
-list.insertBefore(kaleElementFirst, list.firstChild);
+var FirstItem = document.createElement('li');
+var textFirst = document.createTextNode('kale');
+FirstItem.appendChild(textFirst);
+list.insertBefore(FirstItem, list.firstChild);
 //inserts kale as the first item on the list 
 
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
